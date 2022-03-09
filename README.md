@@ -10,8 +10,8 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 
 ## Sumário
 
-- [Python](#topico-1)
-- [O que é um programa](#topico-2)
+- [Python](#python)
+- [O que é um programa](#o-que-e-um-programa)
 - [Atribuição](#topico-3)
 - [Tipos de variáveis](#topico-3)
 - [Nomes de variáveis](#topico-3)
@@ -34,3 +34,47 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 - [Tratamento de erros](#topico-3)
 - [Testes de software](#topico-3)
 - [Padrões de projeto](#topico-3)
+
+
+## <a name="python"></a>Python
+
+Python é uma linguagem de programação de alto nível, interpretada, orientada a objetos lançada por Guido van Rossum em 1991.
+
+A linguagem prioriza legibilidade do código em detrimento de performance.
+
+Atualmente é uma das linguagens de programação mais populares. Tem sido muito usada em computação científica, análise de dados, estatística e integência artificial e muito mais.
+
+O nome Python se deve ao grupo humorístico britânico Monty Python.
+
+### Documentação
+
+https://www.python.org/
+
+### Guia de estilo
+
+https://www.python.org/dev/peps/pep-0008/
+
+## <a name="o-que-e-um-programa"></a>O que é um programa?
+
+Python é uma linguagem imperativa. Isso significa que você deve fazer uma lista de tarefas que ele deve executar. Por exemplo:
+
+1. Escreva 'Computador' na tela.
+2. Defina x como 40.
+3. Defina y como x*234
+4. Escreva y na tela.
+
+```
+print("computador") # Escreve 'Computador'
+x = 40              # x recebe 40. Agora existe uma variável chamada x que vale 40.
+y = x*234           # y recebe x*234
+print(y)            # Escreve y
+```
+
+### Observações
+
+* As linhas são executadas em sequência.
+* O texto com as instruções é chamado de código do programa.
+* Um trecho de programa também pode ser chamado de rotina.
+* A numeração não faz parte do código, é colocado para conveniência do programador.
+* Você pode acrescentar comentários ao código usando cerquilha (#).
+* Todo texto depois da cerquilha é desconsiderados.
