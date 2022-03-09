@@ -11,7 +11,7 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 ## Sumário
 
 - [Python](#python)
-- [O que é um programa](#o-que-e-um-programa)
+- [O que é um programa?](#o-que-e-um-programa)
 - [Atribuição](#topico-3)
 - [Tipos de variáveis](#topico-3)
 - [Nomes de variáveis](#topico-3)
