@@ -1,6 +1,6 @@
-# Pay tá ON !
+# Py tá ON !
 
-Bem vindo ao curso Pay tá ON ! Aprenda Python se divertindo.
+Bem vindo ao curso Py tá ON ! Aprenda Python se divertindo.
 
 O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 
