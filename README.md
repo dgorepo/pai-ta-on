@@ -1,9 +1,9 @@
-# Pai tá ON !
+# Pay tá ON !
 
-Bem vindo ao curso Pai tá ON ! Aprenda Python se divertindo.
+Bem vindo ao curso Pay tá ON ! Aprenda Python se divertindo.
 
 O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 
 *"- Filha, porque você sempre pede silêncio?"* 
 
-*"- Papai, você sempre ta em reunião. Vive falando **Pai tá ON (Python)**"*
+*"- Papai, você sempre ta em reunião. Vive falando **pai tá ON (Python)**"*
