@@ -12,7 +12,7 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 
 - [Python](#python)
 - [O que é um programa?](#o-que-e-um-programa)
-- [Atribuição](#atribuiacao)
+- [Atribuição](#atribuicao)
 - [Tipos de variáveis](#topico-3)
 - [Nomes de variáveis](#topico-3)
 - [Condicionais](#topico-3)
