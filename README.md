@@ -12,7 +12,7 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 
 - [Python](#python)
 - [O que é um programa?](#o-que-e-um-programa)
-- [Atribuição](#topico-3)
+- [Atribuição](#atribuiacao)
 - [Tipos de variáveis](#topico-3)
 - [Nomes de variáveis](#topico-3)
 - [Condicionais](#topico-3)
@@ -78,3 +78,20 @@ print(y)            # Escreve y
 * A numeração não faz parte do código, é colocado para conveniência do programador.
 * Você pode acrescentar comentários ao código usando cerquilha (#).
 * Todo texto depois da cerquilha é desconsiderados.
+
+## <a name="atribuicao"></a>Atribuição
+
+O comando de atribuição define ou re-define o valor armazenado no local de armazenamento indicado por um nome de variável.
+
+- Quando escrevemos '''x = 40''', lemos x recebe 40.
+- Dizemos que o símbolo = é o operador de atribuição (assignment operator)
+
+```
+# Python diferencia capitalização, isto é, letras maiúsculas e minúsculas.
+
+soma = 3
+SOMA = 40
+
+print(soma)
+print(SOMA)
+```
