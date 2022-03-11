@@ -13,8 +13,8 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 - [Python](#python)
 - [O que é um programa?](#o-que-e-um-programa)
 - [Atribuição](#atribuicao)
-- [Tipos de variáveis](#topico-3)
-- [Nomes de variáveis](#topico-3)
+- [Tipos de variáveis](#tipos-de-variaveis)
+- [Nomes de variáveis](#nomes-de-variaveis)
 - [Condicionais](#topico-3)
 - [Comandos de repetição](#topico-3)
 - [Funções](#topico-3)
@@ -94,4 +94,77 @@ SOMA = 40
 
 print(soma)
 print(SOMA)
+```
+
+
+## <a name="tipos-de-variaveis"></a>Tipos de variáveis
+
+O Python distingue diversos tipos de variáveis: inteiros, floats, strings, listas e muito mais. É mesmo possível definir novas estruturas de dados.
+
+* Inteiros: números inteiros como 34, 3920 e -83829.
+* Floats (ponto flutuante): Reais não necessariamente inteiros como 2.3 e -3.444. Use ponto como separador decimal.
+* Strings. Sequência de caracteres como "Python" ou "computador". Use aspas duplas ou simples. Existem outras formas que veremos adiante.
+
+```
+# Não é necessário declarar o tipo de variável, 
+# o interpretador define pelo contexto.
+# Simplemente use o operador de atribuição
+
+x = 150                 # Inteiro
+y = 2.3                 # Float 
+z = "Eu amo Python"     # String
+u = "150"               # String 
+
+print(x, y, z)          # Apresenta o valor das variáveis na tela.
+```
+
+```
+# Operações básicas
+
+x = 10*20 + 30          
+
+y = 2/3 - 2**3          # O operador ** significa potência.
+
+print(10//3)
+```
+
+```
+# Usando variáveis para definir novas variáveis
+
+x = 10
+y = 20
+z = x + y + x*y
+
+print(z)
+```
+
+```
+# Você pode recuperar o tipo de variável
+
+x = 10
+y = "Relógio"
+z = 1.2
+print(type(x), type(y), type(z))
+```
+
+```
+x = 3 + 4j  # j = raiz quadrada de menos um
+
+print(x**2)
+print(type(x))
+```
+
+
+## <a name="nomes-de-variaveis"></a>Nomes de variáveis
+
+* Nomes de variáveis devem ser compostos de caracteres alfanuméricos e _ (underscore).
+* Não pode começar com dígitos.
+* Evite caracteres acentuados e outros símbolos.
+* Podem ser longos.
+
+```
+trinta = 30
+_numero = 500
+variavel_2 = 100
+variável = 200 # possível usar outros caracteres unicode, mas não é recomendável.
 ```
