@@ -99,16 +99,14 @@ print(SOMA)
 
 ## <a name="tipos-de-variaveis"></a>Tipos de variáveis
 
-O Python distingue diversos tipos de variáveis: inteiros, floats, strings, listas e muito mais. É mesmo possível definir novas estruturas de dados.
+O Python distingue diversos tipos de variáveis: inteiros, floats, strings, listas e muito mais.
 
 * Inteiros: números inteiros como 34, 3920 e -83829.
 * Floats (ponto flutuante): Reais não necessariamente inteiros como 2.3 e -3.444. Use ponto como separador decimal.
 * Strings. Sequência de caracteres como "Python" ou "computador". Use aspas duplas ou simples. Existem outras formas que veremos adiante.
 
 ```
-# Não é necessário declarar o tipo de variável, 
-# o interpretador define pelo contexto.
-# Simplemente use o operador de atribuição
+# Não é necessário declarar o tipo de variável, o interpretador define pelo contexto.
 
 x = 150                 # Inteiro
 y = 2.3                 # Float 
@@ -145,13 +143,6 @@ x = 10
 y = "Relógio"
 z = 1.2
 print(type(x), type(y), type(z))
-```
-
-```
-x = 3 + 4j  # j = raiz quadrada de menos um
-
-print(x**2)
-print(type(x))
 ```
 
 
