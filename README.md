@@ -15,7 +15,7 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 - [Atribuição](#atribuicao)
 - [Tipos de variáveis](#tipos-de-variaveis)
 - [Nomes de variáveis](#nomes-de-variaveis)
-- [Condicionais](#topico-3)
+- [Condicionais](#condicionais)
 - [Comandos de repetição](#topico-3)
 - [Funções](#topico-3)
 - [Funções lambda](#topico-3)
