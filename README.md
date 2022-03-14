@@ -16,7 +16,7 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 - [Tipos de variáveis](#tipos-de-variaveis)
 - [Nomes de variáveis](#nomes-de-variaveis)
 - [Condicionais](#condicionais)
-- [Comandos de repetição](#topico-3)
+- [Comandos de repetição](#comandos-de-repeticao)
 - [Funções](#topico-3)
 - [Funções lambda](#topico-3)
 - [Strings](#topico-3)
@@ -259,7 +259,60 @@ if x>0:
     y = 0
 else:
     y = -1
- 
+```
 
 
+## <a name="comandos-de-repeticao"></a>Comandos de repetição
+
+O Python possui duas estruturas de repetição:
+
+* for: para executar o código em um conjunto pré-determinado de valores.
+* while: para executar enquanto uma dada condição for verdadeira.
+
+```
+# Comando for
+# O comando for repete um bloco de código para um conjunto pré-determinado
+# de valores.
+
+lista = [1, 2, 'Casa', 2.3]
+
+for x in lista:         # Termine com dois pontos(:)
+    print(x)            # Indente os comandos que serão repetidos.
+                        # Indentação = espaços à esquerda
+
+# Laço for com faixa de valores (range).
+
+for x in range(10):   # Aberto à direito, isto é, não inclui 10. 
+    print(x) 
+
+# Calcula fatorial:
+# Exemplo: 4! = 1x2x3x4 = 24, 5! = 1x2x3x4x5 = 120
+
+fatorial = 1
+n = 6
+
+for i in range(1, n+1):   # Não inclui n porque o intervalo é aberto à direita.
+    fatorial *= i            # fatorial = fatorial * i
+    print("i = ", i, ":   i! = ", fatorial)
+    
+fatorial = 1
+for i in range(1, 6):
+    fatorial *= i
+    print(i, fatorial)
+
+    print('aqui')
+    
+# Exemplo com strings:
+
+palavra = 'Alegria'
+for c in palavra:   # Itera nos caracteres da string
+    print(c)
+    
+# Mais um exemplo:
+
+palavra = 'Teclado'
+# palavra = input("Entre com uma string: ")
+
+for i in range(1, len(palavra)+1):
+    print(palavra[0:i])
 ```
