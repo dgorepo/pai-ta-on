@@ -43,3 +43,55 @@ palavra = 'Teclado'
 
 for i in range(1, len(palavra)+1):
     print(palavra[0:i])
+
+    
+# While 
+# Executa repetidas vez um bloco código enquanto uma dada condição é verdadeira
+
+x = 0
+while x<10:   # Repete enquanto x<10
+    print(x)
+    x += 2
+
+print(x)
+
+x = 0
+j = 0
+while x<95: 
+    x = alea.integers(100)
+    print(j, x, sep=':\t')
+    j += 1
+    
+
+s = 'a'
+while s[0] in 'aeiou':
+    s = input("Entre com uma palavra de pelo menos 5 letras: ")
+    
+#Testa se n é primo
+import numpy as np
+
+def teste_de_primalidade(n): # um número >1 é primo se for divisível apenas por 1 e por si mesmo
+    raiz = int(np.sqrt(n))
+
+    if n == 1:
+         return False
+    if n == 2:
+        return True
+    if n%2 == 0:        # % = resto da divisão inteira
+        return False
+
+    k = 3
+    while (k<=raiz):  # testa divisibilidade por 3, 5, 7, 9, 11 etc 
+        if n%k == 0:
+            return False
+        k += 2
+    return True
+
+n = 0
+itens_a_contar = 30
+for i in range(1, itens_a_contar):
+    if teste_de_primalidade(i):
+        print(i, "é primo.")
+        n += 1
+
+print('Existem', n, 'primos até', itens_a_contar, '.')
