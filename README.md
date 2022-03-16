@@ -17,7 +17,7 @@ O nome do curso diz respeito a frase dita pela minha filha de 3 anos:
 - [Nomes de variáveis](#nomes-de-variaveis)
 - [Condicionais](#condicionais)
 - [Comandos de repetição](#comandos-de-repeticao)
-- [Funções](#topico-3)
+- [Funções](#funcoes)
 - [Funções lambda](#topico-3)
 - [Strings](#topico-3)
 - [Listas](#topico-3)
@@ -368,4 +368,162 @@ for i in range(1, itens_a_contar):
 
 print('Existem', n, 'primos até', itens_a_contar, '.')
 
+```
+
+
+## <a name="funcoes"></a>Funções
+
+Funções permitem dividir o código em partes funcionais, tornando mais claro e conciso
+
+```
+def minha_primeira_funcao(x):           # Você deve colocar um ':' ao final.
+    print("Recebi o argumento x =", x)
+    # print(x**2)
+    return x**2     
+                                        
+print(minha_primeira_funcao(10))
+```
+
+```
+# Uma função não precisa retornar valores
+
+def minha_segunda_funcao(x):           # Você deve colocar um ':' ao final.
+    print("Recebi o argumento x =", x) 
+
+minha_segunda_funcao(10) # não retorna nada
+```
+
+```
+# Uma função pode não receber argumentos
+
+def sem_parametros():
+    print('passei por aqui.')
+    return 3
+
+print(sem_parametros())
+```
+
+```
+# Uma função pode receber muitos parametros
+
+def muitos_parametros(x, y, z):
+    return x*y + z
+    
+
+print(muitos_parametros(1, 2, 3))
+```
+
+```
+# Pode-se colocar valores padrão para parâmetros
+def funcao(x=10, y=20, z=3):
+    return x*y + z
+
+print(funcao())          # Implícito: funcao(10, 20, 3)
+print(funcao(x=2, y=5))  # Implícito: funcao(2, 5, 3)
+print(funcao(z=5))       # Implícito: funcao(10, 20, 5)
+```
+
+```
+# Você pode misturar, mas os valores padrão não podem vir antes dos outros. 
+def funcao(x, y=20, z=3):
+    return x*y + z
+
+print(funcao(10))       # Implícito funcao(10, 20, 3)
+print(funcao(2, 5))     # Implícito funcao(2, 5, 3)
+print(funcao(10, z=5))  # Implícito funcao(10, 20, 5)
+# print(funcao())       # Erro
+```
+
+```
+# Uma função tem acesso às variáveis definidas no contexto de onde foi chamada
+
+def minha_funcao():
+    y=5
+    return x
+
+x = 7
+print(minha_funcao())
+# print(y) # Erro!
+```
+
+```
+# Mas variáveis criadas localmente são apenas locais e não se propagam.
+# Atenção, se você atribui valor a uma variável dentro de uma função, 
+# ela se torna local. 
+
+def minha_funcao():
+    global x
+    x = 2
+   
+    # y = 3
+    return x
+
+
+x = 5
+
+print("x =", x)
+print("A função retornou", minha_funcao())
+print("x =", x)
+# print(y) # erro, experimente usar global
+```
+
+```
+# Funções podem conter código estruturado e complexo como um programa qualquer
+# 5! = 5.4.3.2.1 = 120,   3! = 3.2.1 = 6
+
+def fatorial(n):
+    fat = 1
+    for i in range(1, n+1): # 1, 2, 3, ..., n
+        fat *= i
+
+    return fat
+
+print("5! =", fatorial(50))
+``` 
+
+```
+# Funções podem ter mais de um return
+
+def testa(x):
+    if x<10:
+        return "é menor que 10."    # Acaba execução da função
+   
+    if x==10:
+        return "é igual a 10."
+
+    return "é maior que 10."
+    
+for i in range(1, 20, 3):
+    print(i, testa(i))
+```
+
+
+```
+# Funções podem chamar outras funções.
+import numpy as np
+
+def f(x):
+    return x**2 + 1
+
+def g(x):
+    return f(x) + 1 + np.sin(x)
+
+print(g(2))
+```
+
+```
+# Funções podem chamar a si mesmas. 
+# Cuidado com recursões!
+
+# 5! = 5.4.3.2.1 = 5.4!, 4! = 4.3!, 3! = 3.2!, 
+
+def fatorial (n):
+    print("Recebi ", n)
+    
+    assert n>=0, 'n deve ser um inteiro não negativo.'
+    
+    if n==0 or n==1:
+        return 1
+    
+    return n*fatorial(n-1) #n! = n(n-1)(n-2)... 5! = 5.4.3.2.1 = 5.4!, n!  = n.(n-1)!
 ```
